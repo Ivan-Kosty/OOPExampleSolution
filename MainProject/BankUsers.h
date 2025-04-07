@@ -1,14 +1,15 @@
 #include <iostream>
 #include <string>
+#include "main.h"
 using namespace std;
-class BankSystem{
+class BankUsers{
 public:
 	string name;
 	int age;
 	double balance;
 	bool anycredit;
 
-	string getString(BankSystem user) {
+	string getString() {
 		string s = "Name: " + name;
 		s += ", Age: : " + to_string(age);
 		s += ", Balance: " + to_string(balance);

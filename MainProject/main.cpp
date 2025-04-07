@@ -1,30 +1,29 @@
-#include "BankSystem.h"
+#include "BankUsers.h"
+#include "Workers.h"
 
-void edit(BankSystem user) {
+void edit(BankUsers user) {
 	user.name = "Vladimir";
 	user.age = 21;
 	user.balance = 749;
 	user.anycredit = false;
 }
 int main() {
-	BankSystem* us1 = nullptr;
-	us1 = new BankSystem;
-
-	us1->name = "Vladislav";
-	us1->age= 16;
-	us1->balance = 80;
-	us1->anycredit = false;
-
-	BankSystem* us2 = us1;
-
-	cout << "Before: " << endl;
-	cout << us1->getString(*us1) << endl;
-
-	us2->name = "Nazar";
-
-	cout << "After: " << endl;
-	cout << us1->getString(*us1) << endl;
-
-
-	return 0;
+	BankUsers* list = nullptr;
+	int size;
+	cout << "Input numbers of users: ";
+	cin >> size;
+	list = new us[size];
+	cout << "Input data of students:\n";
+	for (int i = 0; i < size; i++)
+	{
+		cout << "name: ";
+		cin >> list[i].name;
+		cout << "age: ";
+		cin >> list[i].age;
+		cout << "balance: ";
+		cin >> list[i].balance;
+		cout << "credit?(y/n): ";
+		char answer;
+		cin >> answer;
+		list[i].anycredit = islower(answer) == 'y';
 }
