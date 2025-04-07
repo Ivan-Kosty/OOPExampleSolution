@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Student.h">
+    <ClInclude Include="BankSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
