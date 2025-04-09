@@ -40,6 +40,10 @@ public:
 		balance = user.balance;
 		anycredit = user.anycredit;
 	}
+	//destructor
+	~BankUsers() {
+		cout << "destructor..." << endl;
+	}
 	string toString() {
 		string s = "Name: " + name;
 		s += ", Age: : " + to_string(age);
