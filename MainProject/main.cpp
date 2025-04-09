@@ -1,29 +1,17 @@
+#include <iostream>
 #include "BankUsers.h"
-#include "Workers.h"
+using namespace std;
 
-void edit(BankUsers user) {
-	user.name = "Vladimir";
-	user.age = 21;
-	user.balance = 749;
-	user.anycredit = false;
-}
 int main() {
-	BankUsers* list = nullptr;
-	int size;
-	cout << "Input numbers of users: ";
-	cin >> size;
-	list = new us[size];
-	cout << "Input data of students:\n";
-	for (int i = 0; i < size; i++)
-	{
-		cout << "name: ";
-		cin >> list[i].name;
-		cout << "age: ";
-		cin >> list[i].age;
-		cout << "balance: ";
-		cin >> list[i].balance;
-		cout << "credit?(y/n): ";
-		char answer;
-		cin >> answer;
-		list[i].anycredit = islower(answer) == 'y';
+	BankUsers user1{};
+	BankUsers user2("Alex", 16);
+	BankUsers user3("Evgeniy", 15, 120, false);
+	BankUsers user4(user3);
+
+	cout << user1.toString() << endl;
+	cout << user2.toString() << endl;
+	cout << user3.toString() << endl;
+	cout << user4.toString() << endl;
+
+	return 0;
 }

@@ -1,20 +1,18 @@
 #include "BankUsers.h"
 
-class Worker {
+class BankAnalyth {
 public:
-    BankUsers getRichestUserOfBank(BankUsers* users, int size) {
-
-
+    BankUsers getRichestUserOfBank(BankUsers* user, int size) {
         double maxBalance = -1;
-        int richestIndex = 0;
 
         for (int i = 0; i < size; i++) {
-            if (users[i].balance > maxBalance) {
-                maxBalance = users[i].balance;
+        int richestIndex = 0;
+            if (user[i].balance > maxBalance) {
+        return user[richestIndex];
+                maxBalance = user[i].balance;
                 richestIndex = i;
             }
         }
 
-        return users[richestIndex];
     }
 };
