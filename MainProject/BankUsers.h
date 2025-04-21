@@ -2,13 +2,13 @@
 #include <string>
 #include "main.h"
 using namespace std;
-class BankUsers{
+class BankUsers {
 public:
 	string name;
 	int age;
 	double balance;
 	bool anycredit;
-	
+
 	BankUsers() {
 		cout << "Default-constructor..." << endl;
 		name = "no name";
@@ -25,20 +25,19 @@ public:
 		anycredit = false;
 	}
 	//canonical constructer...
-	BankUsers(string nm, int a, double b, bool cr) {
+	BankUsers(string name, int age, double balance, bool anycredit) {
 		cout << "canonical constructer..." << endl;
-		name = nm;
-		age = a;
-		balance = b;
-		anycredit = cr;
+		this->name = name;
+		this->age = age;
+		this->balance = balance;
+		this->anycredit = anycredit;
 	}
 	//copy constructer...
-	BankUsers(const BankUsers& user) {
+	BankUsers(const BankUsers& user) : BankUsers(user.name, user.age,
+		user.balance, user.anycredit)
+	{
 		cout << "copy constructer..." << endl;
-		name = user.name;
-		age = user.age;
-		balance = user.balance;
-		anycredit = user.anycredit;
+
 	}
 	//destructor
 	~BankUsers() {
