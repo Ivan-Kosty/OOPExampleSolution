@@ -11,8 +11,8 @@ public:
 			"Alexey", "Maria", "Kate", "Maks",
 			"Vanya", "Antony", "Vlad", "Evgeniy",
 			"Polina", "Irina", "Milana", "Kirill" };
-		int minBal = 0;
-		int maxBal = 100000.0;
+		double minBal = 0;
+		double maxBal = 10000.0;
 		int minAge = 14;
 		int maxAge = 90;
 		for (int i = 0; i < count; i++)

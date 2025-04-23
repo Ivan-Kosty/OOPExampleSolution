@@ -18,7 +18,7 @@ public:
 	}
 	//constructor with arguments...
 	BankUsers(string nm, int a) {
-		cout << "constructor with arguments..." << endl;
+		//cout << "constructor with arguments..." << endl;
 		name = nm;
 		age = a;
 		balance = 0;
@@ -26,7 +26,7 @@ public:
 	}
 	//canonical constructer...
 	BankUsers(string name, int age, double balance, bool anycredit) {
-		cout << "canonical constructer..." << endl;
+		//cout << "canonical constructer..." << endl;
 		this->name = name;
 		this->age = age;
 		this->balance = balance;
@@ -36,12 +36,12 @@ public:
 	BankUsers(const BankUsers& user) : BankUsers(user.name, user.age,
 		user.balance, user.anycredit)
 	{
-		cout << "copy constructer..." << endl;
+		//cout << "copy constructer..." << endl;
 
 	}
 	//destructor
 	~BankUsers() {
-		cout << "destructor..." << endl;
+		//cout << "destructor..." << endl;
 	}
 	string toString() {
 		string s = "Name: " + name;
