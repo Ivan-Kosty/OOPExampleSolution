@@ -9,11 +9,11 @@ public:
 	double balance;
 	bool anycredit;
 
-	BankUsers() {
-		cout << "Default-constructor..." << endl;
+	BankUsers() : BankUsers("no name", 13, 10, false) {
+		//cout << "Default-constructor..." << endl;
 		name = "no name";
 		age = 14;
-		balance = 0;
+		balance = 10;
 		anycredit = false;
 	}
 	//constructor with arguments...
