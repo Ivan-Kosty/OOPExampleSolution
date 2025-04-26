@@ -17,12 +17,8 @@ public:
 		int maxAge = 90;
 		for (int i = 0; i < count; i++)
 		{
-			list[i].name = names[rand() % 20];
-			list[i].age = rand() % (maxAge - minAge + 1) + minAge;
-			for (int j = 0; j < list[i].balance; j++)
-			{
-				list[i].balance = rand() % (maxBal - minBal + 1) + minBal;
-			}
+			list[i].setName(names[rand() % 15]);
+			list[i].setAge(rand() % (maxAge - minAge + 1) + minAge);
 		}
 	}
 };
