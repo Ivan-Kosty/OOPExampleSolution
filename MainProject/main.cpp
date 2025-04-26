@@ -4,6 +4,9 @@ using namespace std;
 
 int main() {
 	int count;
+	BankUsers us;
+
+
 	cout << "Input number of users: ";
 	cin >> count;
 
