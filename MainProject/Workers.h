@@ -7,9 +7,9 @@ public:
 
         for (int i = 0; i < size; i++) {
         int richestIndex = 0;
-            if (user[i].balance > maxBalance) {
+            if (user[i].getBalance() > maxBalance) {
         return user[richestIndex];
-                maxBalance = user[i].balance;
+                maxBalance = user[i].getBalance();
                 richestIndex = i;
             }
         }
