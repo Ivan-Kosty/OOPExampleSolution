@@ -140,12 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BankUsers.cpp" />
+    <ClCompile Include="Group.cpp" />
     <ClCompile Include="Initializer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BankUsers.h" />
+    <ClInclude Include="Group.h" />
     <ClInclude Include="Initializer.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Manager.h" />

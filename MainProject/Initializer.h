@@ -1,5 +1,5 @@
-#include "BankUsers.h"
+#include "Group.h"
 class Initializer {
 public:
-	void init(BankUsers*& list, int count);
+	void init(Group group);
 };

@@ -63,4 +63,5 @@ double BankUsers::getAllBillBalance() {
 	{
 		sum += balance;
 	}
+	return balance;
 }
